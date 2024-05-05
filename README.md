@@ -5,8 +5,6 @@
 ### Overview
 In today's digital age, online shopping has become an integral part of our lives. E-Commerce Haven aims to provide a seamless and enjoyable shopping experience for customers worldwide. With a vast selection of products, user-friendly interface, and secure payment options, we strive to be your go-to destination for all your shopping needs.
 ### Key Features:
-1. Home page,
-### **1. Functional Requirements**
 
 ### **a. Product Management:**
 
@@ -36,7 +34,9 @@ npm install
 npm node .\index.js
 ```
 Run this in backend folder to access database and so that all the API can be reached.
-!!! You have to type this command before running frontend!!!
+
+ !!!You have to type this command before running frontend!!!
+
 3. Run frontend:
 ```python 
 npm start
