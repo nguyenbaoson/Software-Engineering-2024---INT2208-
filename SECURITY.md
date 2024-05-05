@@ -9,7 +9,7 @@ We take the security of the project and user information seriously. If you disco
 To report a security vulnerability, please follow these steps:
 
 1. Do not publicly disclose information about the security issue on public forums, issue trackers, or social networks.
-2. Send the necessary details about the security vulnerability to the email address oppice312@gmail.com, including steps to reproduce the issue (if applicable) along with any other evidence such as images or videos.
+2. Send the necessary details about the security vulnerability to the email address nguyenbaosonnd04@gmail.com, including steps to reproduce the issue (if applicable) along with any other evidence such as images or videos.
 3. Wait for a response from our team - we will contact you after reviewing the report and communicate any next steps.
 
 ### Response Policy
