@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection with MongoDB
-mongoose.connect("mongodb+srv://hson1709:hson1709@cluster0.pbmbvgz.mongodb.net/e-commerce")
+mongoose.connect("mongodb+srv://nguyenbaoson:nguyenbaoson251605@cluster0.ma42gpo.mongodb.net/e-ecommerce")
 
 // API Creation
 
@@ -210,4 +210,3 @@ app.listen(port,(erorr)=>{
         console.log("Error: "+erorr)
     }
 })
-

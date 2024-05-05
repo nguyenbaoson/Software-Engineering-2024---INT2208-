@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import './AddProduct.css'
 import upload_area from '../../assets/upload_area.svg'
+import delete_btn from '../../assets/delete_btn.svg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const AddProduct = () => {
 
@@ -8,7 +12,7 @@ const AddProduct = () => {
     const [productDetails,setProductDetails] = useState({
         name:"",
         image:"",
-        category:"women",
+        category:"Women",
         new_price:"",
         old_price:""
     })
@@ -19,6 +23,17 @@ const AddProduct = () => {
     const changeHandler = (e) =>{
         setProductDetails({...productDetails,[e.target.name]:e.target.value})
     }
+
+    const resetForm = () => {
+        setProductDetails({
+          name:"",
+          image:"",
+          category:"women",
+          new_price:"",
+          old_price:""
+        });
+        setImage(false); // Đặt lại hình ảnh được chọn về giá trị mặc định
+      };
 
     const Add_Product = async ()=>{
         console.log(productDetails);
@@ -47,8 +62,14 @@ const AddProduct = () => {
                     'Content-Type':'application/json',
                 },
                 body:JSON.stringify(product),
-            }).then((resp)=>resp.json()).then((data)=>{
-                data.success?alert("Product Added"):alert("Failed")
+            }).then((resp)=>resp.json())
+            .then((data)=>{
+                if(data.success) {
+                    toast.success("Product Added");
+                    resetForm(); // Đặt lại các trường thông tin trong form
+                } else {
+                    toast.error("Can not add the product!");
+                }
             })
         }
     }
@@ -72,18 +93,22 @@ const AddProduct = () => {
         <div className="addproduct-itemfield">
             <p>Product Category</p>
             <select value={productDetails.category} onChange={changeHandler} name="category" className='add-product-selector'>
-                <option value="women">Women</option>
-                <option value="men">Men</option>
-                <option value="kid">Kid</option>
+                <option value="Women">Women</option>
+                <option value="Men">Men</option>
+                <option value="Kid">Kid</option>
             </select>
         </div>
         <div className="addproduct-itemfield">
             <label htmlFor="file-input">
                 <img src={image?URL.createObjectURL(image):upload_area} className='addproduct-thumnail-img' alt="" />
             </label>
+            {image && (
+                <img onClick={()=>{setImage(false)}} src={delete_btn} className="delete-image" />
+            )}
             <input onChange={imageHandler} type="file" name='image' id='file-input' hidden/>
         </div>
         <button onClick={()=>{Add_Product()}} className="addproduct-btn">ADD</button>
+        <ToastContainer />
       </div>
   )
 }
