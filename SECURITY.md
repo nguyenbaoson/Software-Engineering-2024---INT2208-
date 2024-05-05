@@ -1,21 +1,28 @@
-# Security Policy
+# Privacy Policy
 
-## Supported Versions
+## Reporting a Security Vulnerability
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+We take the security of the project and user information seriously. If you discover a security vulnerability in the project, please report it to us immediately.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+### How to report?
 
-## Reporting a Vulnerability
+To report a security vulnerability, please follow these steps:
 
-Use this section to tell people how to report a vulnerability.
+1. Do not publicly disclose information about the security issue on public forums, issue trackers, or social networks.
+2. Send the necessary details about the security vulnerability to the email address oppice312@gmail.com, including steps to reproduce the issue (if applicable) along with any other evidence such as images or videos.
+3. Wait for a response from our team - we will contact you after reviewing the report and communicate any next steps.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### Response Policy
+
+After you submit the report, our security team commits to:
+
+- Confirm receipt of your report.
+- Provide an expected timeline for verifying the vulnerability.
+- Notify you of the verification and application of a patch (if applicable).
+- Recommend, if necessary, a public acknowledgment for the discovery of the vulnerability in the project's documentation.
+
+We look forward to collaborating with you to carefully and skillfully address the issue, ensuring that the disclosure of issues does not pose additional risks to the community.
+
+Thank you for helping maintain the safety and security of the project!
+
+oppice312@gmail.com - Contact address for the project's security team
