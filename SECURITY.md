@@ -25,4 +25,4 @@ We look forward to collaborating with you to carefully and skillfully address th
 
 Thank you for helping maintain the safety and security of the project!
 
-oppice312@gmail.com - Contact address for the project's security team
+nguyenbaosonnd04@gmail.com - Contact address for the project's security team
