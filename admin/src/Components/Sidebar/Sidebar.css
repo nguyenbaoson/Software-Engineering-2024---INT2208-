@@ -1,11 +1,10 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 40px;
     gap: 20px;
     width: 100%;
     max-width: 250px;
-    height: 100vh;
     background: white;
 }
   
@@ -36,7 +35,12 @@
 }
   
 .sidebar-item:hover::before {
+    transition: 0.4s;
     background-color: rgba(0, 0, 0, 0.1); 
+}
+.sidebar-item:active{
+    background: #ffffff;
+    transition: 0.4s;
 }
   
 .sidebar-item > * { 

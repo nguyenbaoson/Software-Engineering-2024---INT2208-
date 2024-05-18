@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 .nav-logo p{
     color: #171717;
@@ -35,15 +36,18 @@
 }
 .nav-menu hr{
     border: none;
-    width: 80%;
+    width: 95%;
     height: 3px;
     border-radius: 10px;
-    background: #FF4141;
+    background: #3290f3;
 }
 .nav-login-cart {
     display: flex;
     align-items: center;
     gap: 45px;
+}
+.nav-login-cart ul{
+    list-style-type: none;
 }
 
 .nav-login-cart button{
@@ -52,14 +56,22 @@
     outline: none;
     border: 1px solid #7a7a7a;
     border-radius: 75px;
-    color: #515151;
+    color: #656464;
     font-size: 20px;
     font-weight: 500;
     background: white;
     cursor: pointer;
+    transition: 0.3;
 }
+
+.nav-login-cart button:hover{
+    transition: 0.4s;
+    background-color: #dadada;
+}
+
 .nav-login-cart button:active{
-    background: #f3f3f3;
+    background: #fffefe;
+    transition: 0.1s;
 }
 .nav-cart-count{
     width: 22px;

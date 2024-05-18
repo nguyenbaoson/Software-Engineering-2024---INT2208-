@@ -25,7 +25,7 @@
     .relatedproducts{
         height: 70vh;
     }
-    .relatedproducts h1 {
+    .relatedproducts h1{
         font-size: 40px;
     }
     .relatedproducts hr{
@@ -41,7 +41,7 @@
     .relatedproducts{
         height: 60vh;
     }
-    .relatedproducts h1 {
+    .relatedproducts h1{
         font-size: 30px;
     }
     .relatedproducts hr{
@@ -55,15 +55,14 @@
 }
 @media(max-width:800px){
     .relatedproducts{
-        height: 60vh;
+        height: 50vh;
         gap: 6px;
     }
-    .relatedproducts h1 {
+    .relatedproducts h1{
         font-size: 20px;
     }
     .relatedproducts hr{
         width: 100px;
-       
     }
     .relatedproducts-item{
         gap: 5px;
@@ -75,7 +74,7 @@
     }
     .relatedproducts-item{
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 }

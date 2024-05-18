@@ -1,47 +1,40 @@
-import React, { useEffect, useState } from 'react';
+
+import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
-import man_banner from './Components/Assets/banner_mens.png';
-import women_banner from './Components/Assets/banner_women.png';
-import kid_banner from './Components/Assets/banner_kids.png';
+import laptop_banner from './Components/Assets/Laptop_banner.png'
+import phone_banner from './Components/Assets/banner1.png'
+import watch_banner from './Components/Assets/Watch_banner.png'
+import PlaceOrder from './Components/PlaceOrder/PlaceOrder'
+import MyOrders from './Pages/MyOrders';
+import Verify from './Pages/Verify';
 
 function App() {
-  const current_theme = localStorage.getItem('current_theme');
-  const [theme, setTheme] = useState(current_theme?
-    current_theme : 'light'
-  );
-  useEffect(()=>{
-    localStorage.setItem('current_theme',theme)
-
-  },[theme])
-
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
-
   return (
-    <div className={`App ${theme}`}>
-      <BrowserRouter>
-        <Navbar theme={theme} toggleTheme={toggleTheme} />
-        <Routes>
-          <Route path='/' element={<Shop />} />
-          <Route path='/mens' element={<ShopCategory banner={man_banner} category="men" />} />
-          <Route path='/women' element={<ShopCategory banner={women_banner} category="women" />} />
-          <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid" />} />
-          <Route path="/product" element={<Product />}>
-            <Route path=':productId' element={<Product />} />
-          </Route>
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/login' element={<LoginSignup />} />
-        </Routes>
-        <Footer />
-        
+    <div>
+      <BrowserRouter>      
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Shop/>}/>
+        <Route path='/phones' element={<ShopCategory banner={phone_banner} category="Phone"/>}/>
+        <Route path='/laptops' element={<ShopCategory banner={laptop_banner} category="Laptop"/>}/>
+        <Route path='/watches' element={<ShopCategory banner={watch_banner} category="Watch"/>}/>
+        <Route path="/product" element={<Product/>}>
+          <Route path=':productId' element={<Product/>}/>
+        </Route>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/login' element={<LoginSignup/>}/>
+        <Route path='/myorders' element={<MyOrders/>}/>
+        <Route path='/delivery' element={<PlaceOrder/>}/>
+        <Route path='/verify' element={<Verify/>}/>
+      </Routes>
+      <Footer/>
       </BrowserRouter>
     </div>
   );
