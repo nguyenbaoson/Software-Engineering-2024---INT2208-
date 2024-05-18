@@ -1,5 +1,8 @@
 # E-Commerce Website Using MERN stack
 
+![image](https://github.com/nguyenbaoson/software_engineering_2024/assets/125812602/01a48194-9be9-46a5-ae77-dcef97c89ebb)
+
+
 
 ## Introduction
 ### Overview
