@@ -2,6 +2,8 @@
 
 ![image](https://github.com/nguyenbaoson/software_engineering_2024/assets/125812602/01a48194-9be9-46a5-ae77-dcef97c89ebb)
 
+## Demo:
+https://drive.google.com/file/d/12dqLSWUlXtDplv2CsRPrBzzuC3OnaIMW/view?usp=sharing
 
 
 ## Introduction
