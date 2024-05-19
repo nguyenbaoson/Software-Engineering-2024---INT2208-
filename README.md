@@ -4,7 +4,8 @@
 
 ## Demo:
 https://drive.google.com/file/d/12dqLSWUlXtDplv2CsRPrBzzuC3OnaIMW/view?usp=sharing
-
+## Báo cáo:
+https://docs.google.com/document/d/1S2ed_4vUkK3YB39YA29d63UnSpnM8KgD/edit?usp=sharing&ouid=108751947067280496983&rtpof=true&sd=true
 
 ## Introduction
 ### Overview
