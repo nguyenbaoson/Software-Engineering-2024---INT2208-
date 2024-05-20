@@ -3,7 +3,7 @@
 ![image](https://github.com/nguyenbaoson/software_engineering_2024/assets/125812602/01a48194-9be9-46a5-ae77-dcef97c89ebb)
 
 ## Demo:
-[https://drive.google.com/file/d/12dqLSWUlXtDplv2CsRPrBzzuC3OnaIMW/view?usp=sharing](https://drive.google.com/drive/folders/1LySkR-s7egXnCZyPNEHf1q5Mky0TP-fY?usp=sharing)
+https://drive.google.com/drive/folders/1LySkR-s7egXnCZyPNEHf1q5Mky0TP-fY?usp=sharing
 ## Báo cáo:
 https://docs.google.com/document/d/1S2ed_4vUkK3YB39YA29d63UnSpnM8KgD/edit?usp=sharing&ouid=108751947067280496983&rtpof=true&sd=true
 
